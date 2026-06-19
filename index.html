@@ -1,1 +1,134 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Jyoti</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ffd6e7,#ffeef5);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.box{
+    background:white;
+    width:90%;
+    max-width:500px;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 0 25px pink;
+}
+
+h1{
+    color:#ff2d75;
+    margin-bottom:15px;
+}
+
+p{
+    color:#444;
+    font-size:18px;
+    line-height:1.6;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff2d75;
+    color:white;
+    font-size:18px;
+}button:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+#message{
+    display:none;
+}
+
+.heart{
+    position:absolute;
+    color:#ff4d88;
+    font-size:25px;
+    animation:fall 5s linear infinite;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-100px);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<div id="gift">
+<h1>🎁 A Special Surprise For Dear Jyoti 🎀</h1>
+
+<p>
+Click the button below and open your little birthday surprise.
+</p>
+
+<button onclick="openGift()">
+Open My Gift 💗
+</button>
+
+</div>
+
+<div id="message">
+  <h1>🎂 Happy Birthday Dear Jyoti 💐🥳💗</h1>
+
+<p>
+Dear Jyoti,<br><br>
+
+Today is a beautiful day because God has blessed this world with your presence. ✨<br><br>
+
+Our friendship may not have started with long conversations, but two years ago we connected, and after a long time your message on Instagram became a beautiful reminder that some friendships can stay special even with distance. 💖<br><br>
+
+Thank you for your kindness, your faith, and your wonderful nature. I pray that God fills your life with happiness, good health, success, and endless blessings. 🙏🌸<br><br>
+
+📖 Bible Verse:<br>
+"The Lord bless you and keep you; The Lord make His face shine upon you and be gracious to you."
+<br>
+— Numbers 6:24–25 ✝️<br><br>
+
+Keep smiling, keep shining, and always remember you are precious in God's eyes. 🌷✨<br><br>
+
+With prayers and best wishes,<br>
+<b>Akhaya 💐</b>
+</p>
+
+</div>
+
+</div>
+
+<script>
+function openGift(){
+    document.getElementById("gift").style.display="none";
+    document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
